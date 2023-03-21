@@ -5,8 +5,6 @@ RUN yum update -y && yum -y install docker unzip
 RUN systemctl enable docker.service
 # RUN systemctl start docker.service
 
-RUN yum install 
-
 # install aws-cli v2
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
   unzip awscliv2.zip && \
