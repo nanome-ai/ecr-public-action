@@ -3,7 +3,7 @@ FROM public.ecr.aws/amazonlinux/amazonlinux:latest
 
 RUN yum update -y && yum -y install docker unzip
 RUN systemctl enable docker.service
-RUN systemctl start docker.service
+# RUN systemctl start docker.service
 
 RUN yum install 
 
