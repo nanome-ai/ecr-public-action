@@ -1,9 +1,7 @@
 FROM public.ecr.aws/amazonlinux/amazonlinux:latest
 
-
 RUN yum update -y && yum -y install docker unzip
 RUN systemctl enable docker.service
-# RUN systemctl start docker.service
 
 # install aws-cli v2
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
